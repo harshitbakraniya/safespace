@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Free Web tutorials" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="author" content="John Doe" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Safe Space</title>
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="/assets/images/favicon.png" />
+    <!-- main css -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- bootstrap css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <!-- icons link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <!-- AOS animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- Header section start-->
+    <header class="header position-fixed w-100 bg-white" data-aos="fade-down">
+      <nav class="navbar navbar-expand-lg navbar-light border-bottom py-3">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="./assets/images/logo.png" alt="main-logo" width="120" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-5">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#home"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#articles">Articles</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#blogs">Blogs</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="#contact-us"
+                  tabindex="-1"
+                  aria-disabled="true"
+                  >Contact us</a
+                >
+              </li>
+            </ul>
+            <div class="btns">
+              <a href="./sign-in.html" class="btn" type="submit">Log in</a>
+              <a href="./sign-up.html" class="btn primary-btn" type="submit"
+                >Sign Up</a
+              >
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Header section end -->
+
+    <!-- Banner section start-->
+    <section class="banner d-flex align-items-center" id="home">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6 left">
+            <div
+              class="content h-100 d-flex align-items-start flex-column justify-content-center"
+            >
+              <h3 class="title">
+                Your Mental Helath Wellness & Wellbeing Start Here
+              </h3>
+              <p class="sub-title">
+                Experience mental health wellness and wellbeing through our
+                community of professional partners.
+              </p>
+              <div class="subscribe-email d-flex align-items-start mt-4">
+                <form>
+                  <div class="mb-3">
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="exampleInputEmail1"
+                      aria-describedby="emailHelp"
+                      placeholder="Enter Email"
+                    />
+                  </div>
+                </form>
+                <button class="btn primary-btn ms-2" type="submit">
+                  Get Started
+                </button>
+              </div>
+
+              <div id="emailHelp" class="form-text">
+                We care about your data in our
+                <a class="privacy-link text-underline">privacy policy</a>
+              </div>
+              <!-- <div
+                id="relaunching"
+                class="et_pb_module et_pb_text et_pb_text_3 et_pb_text_align_left et_pb_bg_layout_light"
+              >
+                <div class="et_pb_text_inner">
+                  <h5>Download Now</h5>
+                  <p>
+                    The top-rated app for stress, anxiety, and depression with
+                    over 3 million users.
+                  </p>
+                  <div>
+                    <a
+                      href=""
+                      rel="noopener noreferrer nofollow external"
+                      data-wpel-link="external"
+                      ><img
+                        decoding="async"
+                        style="margin-right: 12px"
+                        src="./assets/images/AppStore.png"
+                        alt="app store"
+                        width="125px"
+                        class="apple-store-btn" /></a
+                    ><a
+                      href=""
+                      rel="noopener noreferrer nofollow external"
+                      data-wpel-link="external"
+                      ><img
+                        decoding="async"
+                        src="./assets/images/GooglePlay.png"
+                        alt="google play"
+                        width="140px"
+                        class="google-store-btn"
+                    /></a>
+                  </div>
+                </div>
+              </div> -->
+            </div>
+          </div>
+          <div
+            class="col-12 col-md-6 right ml-auto"
+            data-aos="fade-left"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+          >
+            <img src="./assets/images/bannerImg.png" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Banner section end -->
+
+    <!-- About section start -->
+    <section class="about-us" id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-12 col-lg-6 left">
+            <div class="content position-relative">
+              <img
+                src="./assets/images/full-shot-young-woman-undergoing-therapy.jpg"
+                data-aos="fade-right"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine"
+              />
+              <img
+                src="./assets/images/mom-spending-time-with-her-kid.jpg"
+                class="position-absolute"
+                data-aos="zoom-in"
+              />
+            </div>
+          </div>
+          <div class="col-12 col-md-12 col-lg-5 right ms-auto">
+            <div class="content">
+              <h3 class="title" data-aos="fade-up">
+                Our Journey in Mental Health Advocacy
+              </h3>
+              <p data-aos="fade-up">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+                dolore nostrum voluptate repellat deleniti architecto veritatis
+                similique eum? Fugiat dolorem non totam consequatur nemo aliquam
+                nobis molestias deleniti eum tenetur. Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Quaerat dolore nostrum voluptate
+                repellat deleniti architecto veritatis similique eum? Fugiat
+                dolorem non totam consequatur nemo aliquam nobis molestias
+                deleniti eum tenetur
+              </p>
+              <h6 class="second-title" data-aos="fade-up">
+                Your mental health and complete well-being is our priority.
+              </h6>
+              <p data-aos="fade-up">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+                dolore nostrum voluptate repellat deleniti architecto veritatis
+                similique eum? Fugiat dolorem non totam consequatur nemo aliquam
+                nobis molestias deleniti eum tenetur.
+              </p>
+              <button class="btn primary-btn" data-aos="fade-up">
+                More About Us
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About section end -->
+
+    <!-- article section start -->
+    <section class="articles" id="articles">
+      <div class="container">
+        <div class="row">
+          <div class="title">
+            <h3>Articles</h3>
+          </div>
+        </div>
+        <div class="row mt-4">
+          <div class="col-12 col-md-6 col-lg-4" data-aos="zoom-in">
+            <div class="content">
+              <img
+                src="./assets/images/meditation_exercises_social_image_1200.webp"
+                alt=""
+              />
+              <div class="p-3">
+                <p class="heading m-0">The benefits of daily meditation</p>
+                <p class="sub-head m-0">
+                  By Your SafeSpace Mindfulness & Meditation Experts
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4" data-aos="zoom-in">
+            <div class="content">
+              <img
+                src="./assets/images/Screenshot 2024-04-26 at 11.35.55 PM.png"
+                alt=""
+              />
+              <div class="p-3">
+                <p class="heading m-0">The benefits of daily meditation</p>
+                <p class="sub-head m-0">
+                  By Your SafeSpace Mindfulness & Meditation Experts
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4" data-aos="zoom-in">
+            <div class="content">
+              <img
+                src="./assets/images/meditation_for_happiness_social_1200.webp"
+                alt=""
+              />
+              <div class="p-3">
+                <p class="heading m-0">Meditation for happiness</p>
+                <p class="sub-head m-0">
+                  By Your SafeSpace Mindfulness & Meditation Experts
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- article section end -->
+
+    <section class="tabs-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-12">
+            <div
+              class="content d-flex align-items-center justify-content-center flex-column"
+            >
+              <ul
+                class="nav nav-pills mb-3"
+                id="pills-tab"
+                role="tablist"
+                data-aos="fade-up"
+              >
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link active"
+                    id="pills-meditation-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-meditation"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-meditation"
+                    aria-selected="true"
+                  >
+                    Meditate
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="pills-sleep-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-sleep"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-sleep"
+                    aria-selected="false"
+                  >
+                    Sleep
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="pills-move-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-move"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-move"
+                    aria-selected="false"
+                  >
+                    Move
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="pills-focus-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-focus"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-focus"
+                    aria-selected="false"
+                  >
+                    Focus
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="pills-wake-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-wake"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-wake"
+                    aria-selected="false"
+                  >
+                    Wake Up
+                  </button>
+                </li>
+              </ul>
+              <div class="tab-content mt-3" id="pills-tabContent">
+                <div
+                  class="tab-pane fade show active text-center"
+                  id="pills-meditation"
+                  role="tabpanel"
+                  aria-labelledby="pills-meditation-tab"
+                >
+                  <p class="w-50 mx-auto">
+                    Learn to manage feelings and thoughts with the lifelong
+                    skill of everyday mindfulness, any time of the day.
+                  </p>
+                  <div
+                    class="aWrap"
+                    data-src="https://ia800905.us.archive.org/19/items/FREE_background_music_dhalius/backsound.mp3"
+                  >
+                    <button class="aPlay">
+                      <span class="aPlayIco"><i class="fas fa-play"></i></span>
+                    </button>
+                    <div class="range">
+                      <span class="under-ranger"></span>
+                      <input
+                        class="aSeek"
+                        type="range"
+                        min="0"
+                        value="0"
+                        step="1"
+                        disabled
+                      /><span class="change-range"></span>
+                    </div>
+                    <div class="aCron">
+                      <span class="aNow"></span> / <span class="aTime"></span>
+                    </div>
+                    <!-- <div class="volume-container">
+                      <span class="aVolIco"
+                        ><i class="fa fa-volume-up"></i
+                      ></span>
+                      <div class="range-volume">
+                        <span class="under-ranger"></span>
+                        <input
+                          class="aVolume"
+                          type="range"
+                          min="0"
+                          max="1"
+                          value="1"
+                          step="0.1"
+                          disabled
+                        /><span class="change-range"></span>
+                      </div>
+                    </div> -->
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade w-50 text-center mx-auto"
+                  id="pills-sleep"
+                  role="tabpanel"
+                  aria-labelledby="pills-sleep-tab"
+                >
+                  Create the conditions for a more restful night’s sleep with
+                  sleepcasts, music, and other unique audio experiences with our
+                  sleep app.
+                </div>
+                <div
+                  class="tab-pane fade w-50 text-center mx-auto"
+                  id="pills-move"
+                  role="tabpanel"
+                  aria-labelledby="pills-move-tab"
+                >
+                  Train your body and mind at the same time with exercises to
+                  strengthen your mental and physical well-being.
+                </div>
+                <div
+                  class="tab-pane fade w-50 text-center mx-auto"
+                  id="pills-focus"
+                  role="tabpanel"
+                  aria-labelledby="pills-focus-tab"
+                >
+                  Get a clearer picture of what matters most with music and
+                  meditations designed to help boost your ability to focus.
+                </div>
+                <div
+                  class="tab-pane fade w-50 text-center mx-auto"
+                  id="pills-wake"
+                  role="tabpanel"
+                  aria-labelledby="pills-wake-tab"
+                >
+                  Inspiring stories and mini-meditations delivered daily to help
+                  you start your morning right.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- blog section start -->
+    <section class="blogs" id="blogs">
+      <div class="container">
+        <div class="row">
+          <div class="title">
+            <h3>Blogs</h3>
+          </div>
+        </div>
+        <div class="row mt-4">
+          <div class="col-12 col-md-6 col-lg-4" data-aos="zoom-in">
+            <div class="content">
+              <img
+                src="./assets/images/how-fear-of-mission-out-drives-our-behavior.png"
+                alt=""
+              />
+              <p class="date m-0 mt-2">22-04-2024</p>
+              <p class="heading m-0">
+                The Psychology of FOMO: How Fear of Missing Out Drives Our
+                Behavior and What You Can Do About It
+              </p>
+              <p class="sub-head m-0">By ABC</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4" data-aos="zoom-in">
+            <div class="content">
+              <img
+                src="./assets/images/overcoming-performance-anxiety.jpg"
+                alt=""
+              />
+              <p class="date m-0 mt-2">22-04-2024</p>
+              <p class="heading m-0">
+                Overcome Performance Anxiety: Strategies for Managing Stress and
+                Boosting Confidence
+              </p>
+              <p class="sub-head m-0">By ABC</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4" data-aos="zoom-in">
+            <div class="content">
+              <img
+                src="./assets/images/the-impact-of-technology-on-sleep.png"
+                alt=""
+              />
+              <p class="date m-0 mt-2">22-04-2024</p>
+              <p class="heading m-0">
+                The Impact of Technology on Sleep: Tips for Better Rest in a
+                Screen-Obsessed World
+              </p>
+              <p class="sub-head m-0">By ABC</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- blog section end -->
+
+    <!-- contact-us section start -->
+    <section class="contact-us" id="contact-us">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-12 col-md-12 col-lg-6 left">
+            <div class="content" data-aos="fade-up">
+              <div class="title">
+                <h3>Contact Us</h3>
+              </div>
+              <p class="mess">
+                Email, call, or complete the form to learn how SafeSpace can
+                solve your messaging problem .
+              </p>
+              <p class="m-0 mb-2">info@safespace.com</p>
+              <p class="m-0 mb-2">+91 00090009009</p>
+              <a class="text-dark">Customer Support</a>
+
+              <div class="support d-flex align-items-center mt-5">
+                <div class="customer">
+                  <p class="mb-2 title">Customer Support</p>
+                  <p class="w-75">
+                    Our support team is available around the clock to address
+                    any concern or queries you may have.
+                  </p>
+                </div>
+                <div class="customer">
+                  <p class="mb-2 title">Feedback and Suggessions</p>
+                  <p class="w-75">
+                    We value your feedback and are continuously working to
+                    improve SafeSpace. Your input is crucial in shapping the
+                    future of SafeSpace.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-12 col-lg-6 right" data-aos="fade-up">
+            <div class="content">
+              <h3 class="title mb-0">Get in Touch</h3>
+              <p class="sub-title">You can reach out to us anytime</p>
+              <form>
+                <div class="row">
+                  <div class="col-12 col-md-6">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="First name"
+                    />
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Last name"
+                    />
+                  </div>
+                </div>
+                <div class="form-group col-md-12 mt-3">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="inputEmail4"
+                    placeholder="Email"
+                  />
+                </div>
+                <div class="form-group col-md-12 mt-3">
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="inputEmail4"
+                    placeholder="Phone Number"
+                  />
+                </div>
+                <div class="form-group mt-3">
+                  <textarea
+                    class="form-control text-area-control"
+                    id="exampleFormControlTextarea1"
+                    placeholder="How can we help?"
+                    rows="3"
+                  ></textarea>
+                </div>
+                <button
+                  type="submit"
+                  class="btn primary-btn contact-btn mt-3 w-100"
+                >
+                  Submit
+                </button>
+                <p class="w-75 text-center mx-auto mb-0 mt-2">
+                  By contacting us, you agree to our
+                  <a class="text-dark">Terms of service</a> and
+                  <a class="text-dark">Privacy Policy</a>
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- contact-us section end -->
+    <!-- footer section start -->
+    <footer class="footer d-flex align-items-center justify-content-center">
+      <div class="content d-flex align-items-center">
+        <div>
+          <img src="./assets/images/favicon.png" class="foot-logo d-block" />
+        </div>
+        <div class="extra-info align-items-center">
+          <div class="links d-flex">
+            <a class="link text-dark">Home</a
+            ><a class="link text-dark">About us</a
+            ><a class="link text-dark">Articles</a
+            ><a class="link text-dark">Blogs</a
+            ><a class="link text-dark">Contact Us</a>
+          </div>
+          <div class="social d-flex mt-2">
+            <p class="m-0">Follow Along</p>
+            <p class="m-0">: :</p>
+            <div class="icons">
+              <i class="fab fa-facebook-f"></i>
+              <i class="fab fa-instagram"></i>
+              <i class="fab fa-twitter"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- footer section end -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- AOS javascript -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script>
+      var timeString = (secs) => {
+        // (A1) HOURS, MINUTES, SECONDS
+        let ss = Math.floor(secs),
+          hh = Math.floor(ss / 3600),
+          mm = Math.floor((ss - hh * 3600) / 60);
+        ss = ss - hh * 3600 - mm * 60;
+
+        // (A2) RETURN FORMATTED TIME
+        if (hh > 0) {
+          mm = mm < 10 ? "0" + mm : mm;
+        }
+        ss = ss < 10 ? "0" + ss : ss;
+        return hh > 0 ? `${hh}:${mm}:${ss}` : `${mm}:${ss}`;
+      };
+
+      function setProgress(elTarget) {
+        let divisionNumber = elTarget.getAttribute("max") / 100;
+        let rangeNewWidth = Math.floor(elTarget.value / divisionNumber);
+        if (rangeNewWidth > 95) {
+          elTarget.nextSibling.style.width = "95%";
+        } else {
+          elTarget.nextSibling.style.width = rangeNewWidth + "%";
+        }
+      }
+
+      for (let i of document.querySelectorAll(".aWrap")) {
+        // (B) AUDIO + HTML SETUP + FLAGS
+        i.audio = new Audio(encodeURI(i.dataset.src));
+        (i.aPlay = i.querySelector(".aPlay")),
+          (i.aPlayIco = i.querySelector(".aPlayIco")),
+          (i.aNow = i.querySelector(".aNow")),
+          (i.aTime = i.querySelector(".aTime")),
+          (i.aSeek = i.querySelector(".aSeek")),
+          (i.aVolume = i.querySelector(".aVolume")),
+          (i.aVolIco = i.querySelector(".aVolIco"));
+        i.seeking = false; // user is dragging the seek bar
+
+        // (C) PLAY & PAUSE
+        // (C1) CLICK TO PLAY/PAUSE
+        i.aPlay.onclick = () => {
+          if (i.audio.paused) {
+            i.audio.play();
+          } else {
+            i.audio.pause();
+          }
+        };
+
+        // (C2) SET PLAY/PAUSE ICON
+        i.audio.onplay = () =>
+          (i.aPlayIco.innerHTML = '<i class="fa fa-pause"></i>');
+        i.audio.onpause = () =>
+          (i.aPlayIco.innerHTML = '<i class="fa fa-play"></i>');
+
+        // (D) TRACK PROGRESS & SEEK TIME
+        // (D1) TRACK LOADING
+        i.audio.onloadstart = () => {
+          i.aNow.innerHTML = "Loading";
+          i.aTime.innerHTML = "";
+        };
+
+        // (D2) ON META LOADED
+        i.audio.onloadedmetadata = () => {
+          // (D2-1) INIT SET TRACK TIME
+          i.aNow.innerHTML = timeString(0);
+          i.aTime.innerHTML = timeString(i.audio.duration);
+
+          // (D2-2) SET SEEK BAR MAX TIME
+          i.aSeek.max = Math.floor(i.audio.duration);
+
+          // (D2-3) USER CHANGE SEEK BAR TIME
+          i.aSeek.oninput = () => (i.seeking = true); // prevents clash with (d2-4)
+          i.aSeek.onchange = () => {
+            i.audio.currentTime = i.aSeek.value;
+            if (!i.audio.paused) {
+              i.audio.play();
+            }
+            i.seeking = false;
+          };
+
+          // (D2-4) UPDATE SEEK BAR ON PLAYING
+          i.audio.ontimeupdate = () => {
+            if (!i.seeking) {
+              i.aSeek.value = Math.floor(i.audio.currentTime);
+            }
+            i.aNow.innerHTML = timeString(i.audio.currentTime);
+            let divisionNumber = i.aSeek.getAttribute("max") / 100;
+            let rangeNewWidth = Math.floor(i.aSeek.value / divisionNumber);
+            if (rangeNewWidth > 95) {
+              i.aSeek.nextSibling.style.width = "95%";
+            } else {
+              i.aSeek.nextSibling.style.width = rangeNewWidth + "%";
+            }
+          };
+        };
+
+        // (E) VOLUME
+        i.aVolIco.onclick = () => {
+          i.audio.volume = i.audio.volume == 0 ? 1 : 0;
+          i.aVolume.value = i.audio.volume;
+          i.aVolIco.innerHTML =
+            i.aVolume.value == 0
+              ? '<i class="fa fa-volume-off"></i>'
+              : '<i class="fa fa-volume-up"></i>';
+          if (i.aVolume.value == 0) {
+            i.aVolume.nextSibling.style.width = "0%";
+          } else {
+            i.aVolume.nextSibling.style.width = "95%";
+          }
+        };
+        i.aVolume.onchange = () => {
+          i.audio.volume = i.aVolume.value;
+          i.aVolIco.innerHTML =
+            i.aVolume.value == 0
+              ? '<i class="fa fa-volume-off"></i>'
+              : '<i class="fa fa-volume-up"></i>';
+        };
+
+        // (F) ENABLE/DISABLE CONTROLS
+        i.audio.oncanplaythrough = () => {
+          i.aPlay.disabled = false;
+          i.aVolume.disabled = false;
+          i.aSeek.disabled = false;
+        };
+        i.audio.onwaiting = () => {
+          i.aPlay.disabled = true;
+          i.aVolume.disabled = true;
+          i.aSeek.disabled = true;
+        };
+
+        i.aSeek.addEventListener("input", function () {
+          setProgress(this);
+        });
+
+        i.aVolume.addEventListener("input", function () {
+          setProgress(this);
+        });
+      }
+    </script>
+  </body>
+</html>
