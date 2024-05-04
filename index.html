@@ -27,6 +27,8 @@
 
     <!-- AOS animation -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="mediaelementplayer.css" />
   </head>
 
   <body>
@@ -408,23 +410,6 @@
                     <div class="aCron">
                       <span class="aNow"></span> / <span class="aTime"></span>
                     </div>
-                    <!-- <div class="volume-container">
-                      <span class="aVolIco"
-                        ><i class="fa fa-volume-up"></i
-                      ></span>
-                      <div class="range-volume">
-                        <span class="under-ranger"></span>
-                        <input
-                          class="aVolume"
-                          type="range"
-                          min="0"
-                          max="1"
-                          value="1"
-                          step="0.1"
-                          disabled
-                        /><span class="change-range"></span>
-                      </div>
-                    </div> -->
                   </div>
                 </div>
                 <div
@@ -443,8 +428,57 @@
                   role="tabpanel"
                   aria-labelledby="pills-move-tab"
                 >
-                  Train your body and mind at the same time with exercises to
-                  strengthen your mental and physical well-being.
+                  <p class="mx-auto">
+                    Train your body and mind at the same time with exercises to
+                    strengthen your mental and physical well-being.
+                  </p>
+
+                  <div
+                    class="content position-relative"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                  >
+                    <div class="position-relative">
+                      <img
+                        src="./assets/images/imaginary-strength-training_h.webp"
+                      />
+                    </div>
+                    <div class="overlay position-absolute">
+                      <i class="fas fa-play"></i>
+                    </div>
+                  </div>
+
+                  <div
+                    class="modal fade"
+                    id="exampleModal"
+                    tabindex="-1"
+                    aria-labelledby="exampleModalLabel"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                          ></button>
+                        </div>
+                        <div class="modal-body">
+                          <iframe
+                            height="315"
+                            src="https://www.youtube.com/embed/gKPXJpPTN-4?si=gLHY9JjvzSS7o2Du"
+                            title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen
+                          ></iframe>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
                 <div
                   class="tab-pane fade w-50 text-center mx-auto"
@@ -815,6 +849,15 @@
           setProgress(this);
         });
       }
+    </script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="mediaelement-and-player.min.js"></script>
+    <script>
+      var player = new MediaElementPlayer("#player1");
     </script>
   </body>
 </html>
