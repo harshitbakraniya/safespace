@@ -595,6 +595,48 @@
   border-radius: 0.8rem !important;
 }
 
+@media (max-width: 1120px) {
+  .account {
+    height: 100vh;
+    overflow-y: scroll;
+  }
+  .account .left {
+    display: none;
+  }
+  .account .right {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .account .right .account-form {
+    padding: 2rem;
+    width: 80%;
+  }
+  .account .right .account-form .form-group {
+    width: 100%;
+  }
+}
+
+@media (max-width: 630px) {
+  .account {
+    height: 100%;
+    overflow-y: scroll;
+  }
+  .account .left {
+    display: none;
+  }
+  .account .right {
+    width: 100%;
+  }
+  .account .right .account-form {
+    width: 100%;
+  }
+  .account .right .account-form .form-group {
+    width: 100%;
+  }
+}
+
 /* (A) MATERIAL ICONS */
 .aWrap .svg-inline--fa {
   color: white !important;
