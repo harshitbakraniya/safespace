@@ -27,8 +27,6 @@
 
     <!-- AOS animation -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-
-    <link rel="stylesheet" href="mediaelementplayer.css" />
   </head>
 
   <body>
@@ -294,6 +292,7 @@
     </section>
     <!-- article section end -->
 
+    <!-- tabs section start -->
     <section class="tabs-section">
       <div class="container">
         <div class="row">
@@ -428,7 +427,7 @@
                   role="tabpanel"
                   aria-labelledby="pills-move-tab"
                 >
-                  <p class="mx-auto">
+                  <p class="w-50 mx-auto">
                     Train your body and mind at the same time with exercises to
                     strengthen your mental and physical well-being.
                   </p>
@@ -436,11 +435,12 @@
                   <div
                     class="content position-relative"
                     data-bs-toggle="modal"
-                    data-bs-target="#exampleModal"
+                    data-bs-target="#wake-up"
                   >
                     <div class="position-relative">
                       <img
                         src="./assets/images/imaginary-strength-training_h.webp"
+                        loading="lazy"
                       />
                     </div>
                     <div class="overlay position-absolute">
@@ -450,7 +450,7 @@
 
                   <div
                     class="modal fade"
-                    id="exampleModal"
+                    id="wake-up"
                     tabindex="-1"
                     aria-labelledby="exampleModalLabel"
                     aria-hidden="true"
@@ -490,13 +490,59 @@
                   meditations designed to help boost your ability to focus.
                 </div>
                 <div
-                  class="tab-pane fade w-50 text-center mx-auto"
+                  class="tab-pane fade text-center mx-auto"
                   id="pills-wake"
                   role="tabpanel"
                   aria-labelledby="pills-wake-tab"
                 >
-                  Inspiring stories and mini-meditations delivered daily to help
-                  you start your morning right.
+                  <p class="mx-auto w-75">
+                    Inspiring stories and mini-meditations delivered daily to
+                    help you start your morning right.
+                  </p>
+                  <div
+                    class="content position-relative"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                  >
+                    <div class="position-relative">
+                      <img src="./assets/images/62457973.jpeg" loading="lazy" />
+                    </div>
+                    <div class="overlay position-absolute">
+                      <i class="fas fa-play"></i>
+                    </div>
+                  </div>
+
+                  <div
+                    class="modal fade"
+                    id="exampleModal"
+                    tabindex="-1"
+                    aria-labelledby="exampleModalLabel"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                          ></button>
+                        </div>
+                        <div class="modal-body">
+                          <iframe
+                            height="315"
+                            src="https://www.youtube.com/embed/BMMC5Ztmmv8?si=VT0ZCKq0jWHAwVvF"
+                            title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen
+                          ></iframe>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -504,6 +550,7 @@
         </div>
       </div>
     </section>
+    <!-- tabs section end -->
 
     <!-- blog section start -->
     <section class="blogs" id="blogs">
@@ -663,6 +710,7 @@
       </div>
     </section>
     <!-- contact-us section end -->
+
     <!-- footer section start -->
     <footer class="footer d-flex align-items-center justify-content-center">
       <div class="content d-flex align-items-center">
@@ -695,6 +743,7 @@
     </footer>
     <!-- footer section end -->
 
+    <!-- bootstrap scripts -->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
       integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
@@ -849,15 +898,6 @@
           setProgress(this);
         });
       }
-    </script>
-    <script
-      src="https://code.jquery.com/jquery-3.7.1.min.js"
-      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
-      crossorigin="anonymous"
-    ></script>
-    <script src="mediaelement-and-player.min.js"></script>
-    <script>
-      var player = new MediaElementPlayer("#player1");
     </script>
   </body>
 </html>
