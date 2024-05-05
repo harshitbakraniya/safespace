@@ -236,6 +236,8 @@
   background-color: var(--white-color);
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.08);
   border-radius: 1rem;
+  overflow: hidden;
+  cursor: pointer;
 }
 
 .articles .content img {
@@ -243,6 +245,11 @@
   height: 210px;
   border-radius: 0.8rem 0.8rem 0 0;
   object-fit: cover;
+  transition: 0.5s all;
+}
+
+.articles .content:hover img {
+  transform: scale(1.1);
 }
 
 .articles .content .heading {
@@ -397,8 +404,14 @@
 .blogs .content {
   /* background-color: var(--white-color); */
   border-radius: 1rem;
+  transition: 0.5s all;
 }
 
+.blogs .content:hover {
+  cursor: pointer;
+  background-color: var(--white-color);
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+}
 .blogs .content img {
   width: 100%;
   height: 210px;
