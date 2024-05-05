@@ -253,9 +253,10 @@
 }
 
 .articles .content .heading {
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   margin-top: 0.5rem;
   font-weight: 600;
+  line-height: 1.6rem;
 }
 
 .articles .content .sub-head {
@@ -288,7 +289,7 @@
 
   .articles .content .heading {
     line-height: 1.6rem;
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 }
 /* tabs section */
@@ -423,10 +424,12 @@
   font-size: 0.9rem;
   color: #6c757d;
 }
+
 .blogs .content .heading {
-  font-size: 1.3rem;
-  margin-top: 0.5rem;
+  font-size: 1rem;
+  margin: 1rem 0;
   font-weight: 600;
+  line-height: 1.5rem;
 }
 
 .blogs .content .sub-head {
@@ -455,11 +458,6 @@
 
   .blogs .row:nth-child(2) {
     gap: 2rem;
-  }
-
-  .blogs .content .heading {
-    font-size: 1.2rem;
-    line-height: 1.6rem;
   }
 }
 
